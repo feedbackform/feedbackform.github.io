@@ -338,6 +338,9 @@ margin-bottom: -20px;
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+  body {
+    width:320px;
+  }
   section {
     padding-bottom: 15px;
   }
