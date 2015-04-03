@@ -121,7 +121,7 @@ h4 {
       -moz-box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
       box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
       text-align: center;
-      margin: auto;
+      margin: 200px auto;
       top:50px;
     }
 }
@@ -345,6 +345,7 @@ margin-bottom: -20px;
     width:682px;
   }
     .thankyou {
+      margin-top: 200px;
       margin-bottom: 30px;
     }
     .container {
@@ -421,7 +422,7 @@ margin-bottom: -20px;
       -moz-box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
       box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
       text-align: center;
-      margin:  auto;
+      margin: 150px auto;
     }
     .bar {
       width: 280px;
