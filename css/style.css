@@ -1,0 +1,379 @@
+@font-face {
+      font-family: 'Roboto';
+      src:url('http://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,100,500,700');
+      }
+
+html {
+    -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Roboto';
+  margin:0;
+  height:100%;
+  width:100%;
+  background: #bdc3c7;
+
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+
+/* DIALOG BOXES*/
+
+#dialogoverlay{
+  display: none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  width: 100%;
+  z-index: 10;
+}
+#dialogbox{
+  display: none;
+  position: fixed;
+  background: none;
+  border-radius:7px;
+  width:350px;
+  z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+#dialogbox > div > #dialogboxhead{ background: #ecf0f1; font-size:24px; padding:30px 0 0 0; color:#1366a8; text-align: center; }
+#dialogbox > div > #dialogboxbody{ background:#ecf0f1; font-size: 20px; font-weight:bold; padding:5px 10px 15px 10px; color:#1366a8; text-align:center;}
+#dialogbox > div > #dialogboxfoot{ background: #ecf0f1; padding:20px; text-align:center; }
+
+
+.dialog {
+  width:275px;
+  height: 50px;
+  border: none;
+  background: #5fb42d;
+  padding: 15px 60px;
+  color:white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+.dialog:hover {
+  background: #83c031;
+}
+.dialog:active {
+  background: #3c962b;
+}
+
+
+
+.logo {
+  margin:auto;
+  text-align: center;
+}
+
+.logo>img {
+  width:600px;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-weight: 100;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #222;
+}
+
+h4 {
+  font-family: "Roboto";
+  font-weight: 700;
+  color:#333;
+  margin-bottom: 10px;
+}
+
+
+
+.message {
+  font-size: 13px;
+  color:#333;
+  font-family: "Roboto";
+  font-weight: lighter;
+  margin-top: -15px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.thankyou {
+
+  padding: 20px;
+      background:white;
+      width:240px;
+      border: 1px solid
+      /*margin-bottom: 50px;*/
+      -webkit-box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
+      -moz-box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
+      box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
+      text-align: center;
+      margin: auto;
+      top:50px;
+    }
+}
+
+
+}*/
+
+
+* { box-sizing:border-box; }
+
+/* basic stylings ------------------------------------------ */
+
+.container    {
+  font-family:'Roboto';
+  width:600px;
+  margin:80px auto 0;
+  display:block;
+  background:#FFF;
+  /*padding:10px 50px 50px;*/
+}
+h2     {
+  text-align:center;
+  margin-bottom:50px;
+}
+h2 small {
+  font-weight:normal;
+  color:#888;
+  display:block;
+}
+
+form {
+  margin:auto;
+}
+
+
+/* form starting stylings ------------------------------- */
+.radio-group        {
+  position:relative;
+  margin-bottom:45px;
+}
+
+.text-group {
+  position: relative;
+  margin-top: -15px;
+  margin-bottom: 45px;
+}
+
+
+textarea         {
+  font-size:16px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:580px;
+  border:none;
+  color: #333;
+  resize:none;
+  border-bottom:1px solid #999;
+      -webkit-appearance: none;
+    border-radius: 0;
+}
+textarea:focus     { outline:none; }
+
+/* LABEL ======================================= */
+
+ label          {
+  color:#333;
+  font-size:18px;
+  font-weight:normal;
+/*  position:absolute;*/
+  cursor: pointer;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+  padding-right: 18px;
+}
+
+
+
+textarea ~ label          {
+  color:#999;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+textarea:focus ~ label, textarea:valid ~ label    {
+  top:-15px;
+  font-size:14px;
+  color:#3b99fc;
+}
+
+/* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:580px; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#3b99fc;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+
+.jfk-button {
+border:none;
+text-transform: uppercase;
+background: #5fb42d;
+transition: all .3s ease;
+color:white;
+padding: 15px 20px;
+margin-bottom: -20px;
+}
+
+.jfk-button:hover {
+  background: #83c031;
+}
+.jfk-button:active {
+  background:#3c962b;
+}
+/***************************/
+
+.container {
+  background: white;
+  border: 1px solid #d7d7d7;
+  padding:40px;
+
+}
+
+
+
+/*****************************************************************/
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  section {
+    padding-bottom: 15px;
+  }
+    .logo>img {
+    width:480px;
+  }
+    .thankyou {
+      margin-bottom: 30px;
+    }
+    .container {
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  section {
+    padding-bottom: 15px;
+  }
+  .logo>img {
+    width:320px;
+  }
+    .container {
+      padding:0;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .message {
+      font-size: 12px;
+      padding-top: 5px;
+    }
+    form{
+      padding:15px;
+    }
+    input {
+      width:270px;
+    }
+    .jfk-button {
+      margin-bottom: 0;
+    }
+    .thankyou {
+      padding: 20px;
+      background:white;
+      width:240px;
+      border: 1px solid
+      /*margin-bottom: 50px;*/
+      -webkit-box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
+      -moz-box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
+      box-shadow: 2px 2px 4px 0px rgba(92,92,92,1);
+      text-align: center;
+      margin:  auto;
+    }
+    .bar {
+      width: 270px;
+    }
+
+}
+
+
+
