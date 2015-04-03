@@ -18,8 +18,8 @@ body {
 }
 
 section {
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
@@ -88,7 +88,7 @@ h3 {
   font-family: "Roboto";
   font-weight: 400;
   color: #222;
-  padding-bottom: 25px;
+  padding-bottom: 18px;
 }
 
 h4 {
@@ -128,6 +128,8 @@ h4 {
 
 
 }*/
+
+
 
 
 * { box-sizing:border-box; }
@@ -175,10 +177,10 @@ input[type=radio] {
 }
 
 textarea         {
-  font-size:16px;
+  font-size:14px;
   padding:10px 10px 10px 5px;
   display:block;
-  width:580px;
+  width:600px;
   border:none;
   color: #333;
   resize:none;
@@ -201,7 +203,8 @@ textarea:focus     { outline:none; }
   transition:0.2s ease all;
   -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
-  padding-right: 18px;
+  padding-bottom: 5px;
+  display: block;
 }
 
 
@@ -227,7 +230,7 @@ textarea:focus ~ label, textarea:valid ~ label    {
 }
 
 /* BOTTOM BARS ================================= */
-.bar  { position:relative; display:block; width:580px; }
+.bar  { position:relative; display:block; width:600px; }
 .bar:before, .bar:after   {
   content:'';
   height:2px;
@@ -283,12 +286,20 @@ input:focus ~ .highlight {
   to  { width:0; background:transparent; }
 }
 
+.controls {
+  width:100%;
+  text-align: center;
+}
+
+
 .jfk-button {
 border:none;
 text-transform: uppercase;
 background: #5fb42d;
 transition: all .3s ease;
 color:white;
+width:200px;
+font-size: 15px;
 padding: 15px 20px;
 margin-bottom: -20px;
 }
@@ -309,6 +320,13 @@ margin-bottom: -20px;
 
 }
 
+.col1,
+.col2 {
+  width:200px;
+  display: inline-block;
+  padding-left: 40px;
+}
+
 
 
 /*****************************************************************/
@@ -324,7 +342,7 @@ margin-bottom: -20px;
     padding-bottom: 15px;
   }
     .logo>img {
-    width:600px;
+    width:682px;
   }
     .thankyou {
       margin-bottom: 30px;
@@ -332,6 +350,16 @@ margin-bottom: -20px;
     .container {
       margin-top: 0px;
       margin-bottom: 30px;
+    }
+    label {
+      display: block;
+      padding-bottom: 10px;
+      font-size: 15px;
+    }
+    .col1, .col2 {
+      width:200px;
+      display: inline-block;
+      padding-left: 40px;
     }
 
 }
@@ -354,8 +382,12 @@ margin-bottom: -20px;
     }
     .col1,
     .col2 {
-      width:155;
+      width:115px;
       display: inline-block;
+      padding-left: 20px;
+    }
+    label {
+      display: block;
     }
     .message {
       font-size: 12px;
@@ -373,6 +405,8 @@ margin-bottom: -20px;
     }
     .jfk-button {
       margin-bottom: 0;
+      width:100%;
+      font-size: 15px;
     }
     .thankyou {
       padding: 20px;
