@@ -223,7 +223,7 @@ textarea ~ label          {
 }
 
 /* active state */
-textarea:focus ~ label, textarea:valid ~ label    {
+textarea:focus ~ label ,textarea:valid ~ label    {
   top:-15px;
   font-size:14px;
   color:#3b99fc;
@@ -306,9 +306,11 @@ margin-bottom: -20px;
 
 .jfk-button:hover {
   background: #83c031;
+  outline: none;
 }
 .jfk-button:active {
   background:#3c962b;
+  outline:none;
 }
 /***************************/
 
