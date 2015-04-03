@@ -361,6 +361,7 @@ margin-bottom: -20px;
     }
     label {
       font-size: 14px;
+      padding-bottom: 10px;
     }
     textarea {
       width: 280px;
