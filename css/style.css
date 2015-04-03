@@ -324,7 +324,7 @@ margin-bottom: -20px;
     padding-bottom: 15px;
   }
     .logo>img {
-    width:480px;
+    width:600px;
   }
     .thankyou {
       margin-bottom: 30px;
@@ -351,6 +351,11 @@ margin-bottom: -20px;
       margin-top: 0px;
       margin-bottom: 30px;
       position: relative;
+    }
+    .col1,
+    .col2 {
+      width:155;
+      display: inline-block;
     }
     .message {
       font-size: 12px;
