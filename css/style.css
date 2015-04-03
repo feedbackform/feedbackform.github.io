@@ -113,7 +113,7 @@ h4 {
 .thankyou {
 
   padding: 20px;
-  font-family: "Roboto"
+  font-family: "Roboto";
       background:white;
       width:240px;
       border: 1px solid
@@ -298,12 +298,13 @@ input:focus ~ .highlight {
 border:none;
 text-transform: uppercase;
 background: #5fb42d;
-transition: all .3s ease;
+transition: all .001s ease;
 color:white;
 width:200px;
 font-size: 15px;
 padding: 15px 20px;
 margin-bottom: -20px;
+outline: none;
 }
 
 .jfk-button:hover {
@@ -440,6 +441,7 @@ input[type=submit] {
     .thankyou {
       padding: 20px;
       background:white;
+      background-color: white;
       width:240px;
       border: 1px solid
       /*margin-bottom: 50px;*/
