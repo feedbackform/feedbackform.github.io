@@ -188,6 +188,7 @@ textarea         {
   border-bottom:1px solid #999;
       -webkit-appearance: none;
     border-radius: 0;
+    overflow: hidden;
 }
 textarea:focus     { outline:none; }
 
