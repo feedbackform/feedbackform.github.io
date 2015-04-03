@@ -359,9 +359,9 @@ margin-bottom: -20px;
     form{
       padding:15px;
     }
-/*    input {
-      width:280px;
-    }*/
+    input {
+      font-size: 10px;
+    }
     textarea {
       width: 280px;
     }
