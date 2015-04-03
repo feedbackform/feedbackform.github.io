@@ -312,6 +312,10 @@ margin-bottom: -20px;
   background:#3c962b;
   outline:none;
 }
+
+input[type=submit] {
+  -webkit-appearance:none;
+}
 /***************************/
 
 .container {
