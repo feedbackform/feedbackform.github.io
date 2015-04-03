@@ -171,6 +171,7 @@ form {
 
 input[type=radio] {
         /*-webkit-appearance: none;*/
+        display: inline-block;
 }
 
 textarea         {
