@@ -408,6 +408,9 @@ margin-bottom: -20px;
       width:100%;
       font-size: 15px;
     }
+    textarea ~ label {
+      font-size: 15px;
+    }
     .thankyou {
       padding: 20px;
       background:white;
