@@ -76,7 +76,7 @@ section {
 }
 
 .logo>img {
-  width:600px;
+  width:682px;
 }
 
 h2 {
@@ -88,6 +88,7 @@ h3 {
   font-family: "Roboto";
   font-weight: 400;
   color: #222;
+  padding-bottom: 25px;
 }
 
 h4 {
@@ -103,9 +104,9 @@ h4 {
   font-size: 13px;
   color:#333;
   font-family: "Roboto";
-  font-weight: lighter;
+  font-weight: 300;
   margin-top: -15px;
-  padding-bottom: 30px;
+  padding-bottom: 0;
   text-align: center;
 }
 
@@ -136,7 +137,7 @@ h4 {
 .container    {
   font-family:'Roboto';
   width:600px;
-  margin:80px auto 0;
+  margin:0px auto 0;
   display:block;
   background:#FFF;
   /*padding:10px 50px 50px;*/
@@ -169,7 +170,7 @@ form {
 }
 
 input[type=radio] {
-        -webkit-appearance: none;
+        /*-webkit-appearance: none;*/
 }
 
 textarea         {
@@ -302,6 +303,7 @@ margin-bottom: -20px;
 .container {
   background: white;
   border: 1px solid #d7d7d7;
+  /*border-top:none;*/
   padding:40px;
 
 }
