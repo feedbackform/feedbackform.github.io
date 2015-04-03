@@ -338,9 +338,7 @@ margin-bottom: -20px;
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-  body {
-    width:320px;
-  }
+
   section {
     padding-bottom: 15px;
   }
@@ -363,6 +361,9 @@ margin-bottom: -20px;
     }
     input {
       width:295px;
+    }
+    textarea {
+      width: 295px;
     }
     .jfk-button {
       margin-bottom: 0;
