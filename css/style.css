@@ -1,23 +1,4 @@
-@font-face {
-    font-family: 'Quicksand-Bold';
-    src: url('fonts/Quicksand-Bold.ttf'), format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Quicksand-Regular';
-    src: url('fonts/Quicksand-Regular.ttf'), format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Quicksand-Light';
-    src: url('fonts/Quicksand-Light.ttf'), format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
 
 html {
     -webkit-font-smoothing: antialiased;
@@ -110,19 +91,19 @@ h1 {
 }
 
 h2 {
-  font-family: "Quicksand-Bold";
+  font-family: "Quicksand";
   font-weight: 700;
 }
 
 h3 {
-  font-family: "Quicksand-Bold";
+  font-family: "Quicksand";
   font-weight: 700;
   color: #222;
   padding-bottom: 18px;
 }
 
 h4 {
-  font-family: "Quicksand-Regular";
+  font-family: "Quicksand";
   font-weight: 400;
   color:#333;
   margin-bottom: 10px;
@@ -133,7 +114,7 @@ h4 {
 .message {
   font-size: 16px;
   color:#333;
-  font-family: "Quicksand-Regular";
+  font-family: "Quicksand";
   font-weight: 400;
   margin-top: -15px;
   padding-bottom: 15px;
@@ -144,7 +125,7 @@ h4 {
 .thankyou {
 
   padding: 20px;
-  font-family: "Quicksand-Bold";
+  font-family: "Quicksand";
       background:white;
       width:240px;
       border: 1px solid
@@ -427,19 +408,19 @@ input[type=submit] {
 
 
 ::-webkit-input-placeholder {
-   font-family: "Quicksand-Regular";
+   font-family: "Quicksand";
 }
 
 :-moz-placeholder { /* Firefox 18- */
-    font-family: "Quicksand-Regular";
+    font-family: "Quicksand";
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-    font-family: "Quicksand-Regular";
+    font-family: "Quicksand";
 }
 
 :-ms-input-placeholder {
-    font-family: "Quicksand-Regular";
+    font-family: "Quicksand";
 }
 
 
